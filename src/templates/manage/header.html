@@ -1,0 +1,62 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lib/bootstrap.min.css') }}?date=20210308"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lib/fontawesome/css/all.min.css') }}?date=20210406"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}?date=20210308"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sidebar.css') }}?date=20210308"/>
+    <script type="text/javascript"
+            src="{{ url_for('static', filename='js/lib/jquery.min.js') }}?date=20210308"></script>
+    <script type="text/javascript"
+            src="{{ url_for('static', filename='js/lib/bootstrap.min.js') }}?date=20210308"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/header.js') }}?date=20210308"></script>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">TF2 ML Study</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/manage">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="wrapper d-flex align-items-stretch">
+<!-- Sidebar -->
+<nav id="sidebar">
+    <div class="p-4 pt-5">
+<!--        <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a>-->
+        <ul class="list-unstyled components mb-5">
+            <li>
+                <a href="#imageSubmenu" data-toggle="collapse" aria-expanded="false"
+                   class="dropdown-toggle collapsed">Images</a>
+                <ul class="list-unstyled collapse" id="imageSubmenu" style="">
+                    <li>
+                        <a href="/manage/image/flower_classify">Flower Classification</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="footer">
+            <p>
+            </p>
+        </div>
+    </div>
+</nav>
+

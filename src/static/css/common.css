@@ -1,0 +1,31 @@
+body {
+    font-family: poppins,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    background: #fafafa;
+    color: gray;
+}
+
+#content {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+@media (min-width: 768px)
+.p-md-5 {
+    padding: 3rem!important;
+}
+
+.not-visible {
+    display: none;
+}
+
+.prediction-icon {
+    color: #f8b739;
+    padding: 20px;
+}

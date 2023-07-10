@@ -1,0 +1,4 @@
+common:
+    log:
+        conf: "logging_dev.yaml"
+        app: "../log/app/main.log"

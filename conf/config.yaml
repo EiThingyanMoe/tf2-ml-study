@@ -1,0 +1,14 @@
+common:
+    version: "0.0.1"
+    server:
+        host: "localhost"
+        port: 5000
+    saved_models:
+        flower_model:
+            model_path: "file_storage/saved_flowers_model_mobilenet_v3_small_100_224"
+            flower_types:
+                0: "daisy"
+                1: "dandelion"
+                2: "roses"
+                3: "sunflowers"
+                4: "tulips"
